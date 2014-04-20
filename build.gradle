@@ -30,6 +30,7 @@ dependencies {
 }
 
 // go to the project root folder and issue gradle run --stacktrace to run the below task
+// gradle build -x test to compile without test
 task run(type: JavaExec, dependsOn: classes) {
     main = 'hari.scala.test.Sample'
     classpath sourceSets.main.runtimeClasspath
