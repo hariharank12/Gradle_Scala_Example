@@ -11,7 +11,7 @@ import java.util.List;
 // this is the way more or less java has implemented its iterable & iterator interface. for more details refer AbstractList.java . ArrayList.java extends AbstractList.java
 
 
-public class MyCollection<E> implements Iterable<E> {
+public class MyList<E> implements Iterable<E> {
 
 /*
     static List<String> familyNames = new ArrayList<String>() {{
@@ -23,7 +23,7 @@ public class MyCollection<E> implements Iterable<E> {
 */
     private List<E> familyNames = null;
 
-    public MyCollection(List<E> familyNames) {
+    public MyList(List<E> familyNames) {
         this.familyNames = familyNames;
     }
 
@@ -76,7 +76,7 @@ public class MyCollection<E> implements Iterable<E> {
             add("hariharan");
         }};
 
-        MyCollection<String> stringCollection = new MyCollection<String>(familyNames);
+        MyList<String> stringCollection = new MyList<String>(familyNames);
 
         for(String name: stringCollection){
             System.out.println(name);
