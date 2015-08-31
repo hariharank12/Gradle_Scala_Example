@@ -20,7 +20,7 @@ class WedLock(val groom:String) {
 }
 // style one
 class ImplicitConversionDemoStyleOne extends ImplicitDefinitions {
-  "hari" <===> "lakshmi"
+  "hari" <===> "subha"
 }
 
 // style two
